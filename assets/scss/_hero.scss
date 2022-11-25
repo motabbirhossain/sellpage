@@ -1,0 +1,113 @@
+/* ----------------------------------
+   Hero Section - Styles
+ ------------------------------------ */
+.hero-wrapper{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    .hero-contents{
+        margin: 200px 0px;
+        h5{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 19px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            text-transform: capitalize;
+            color: $white;
+            margin-bottom: 50px;
+            @media (max-width:770px) {
+                font-size: 40px;
+                span{
+                    font-size: 50px;
+                font-weight: 700;
+                }
+            }
+            span{
+                font-size: 60px;
+                font-weight: 700;
+
+                &:nth-child(2){
+                    font-weight: 500;
+                    font-size: 50px;
+                    color: $textcolor-2;
+                }
+            }
+        }
+        a{
+            padding: 20px 40px;
+            border: 2px solid $textcolor-2;
+            border-radius: 4px;
+            background-color: transparent;
+            text-transform: capitalize;
+            @include transition(0.4s);
+            &:hover{
+                background-color: $textcolor-2;
+                color: $white;
+            }
+        }
+    }
+    &::after{
+        clear: both;
+        display: block;
+        content: "";
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(180deg, rgba(4, 33, 63, 0.96) 28.74%, rgba(255, 47, 86, 0.96) 100%);
+    }
+}
+.respons_wrapper{
+    z-index: -1;
+    .respons_title{
+        padding: 100px 0px 150px 0;
+
+        h5{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 19px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-family: $heading-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 60px;
+            text-align: center;
+            color: $white;
+            margin-bottom: 50px;
+            span{
+                font-size: 50px;
+                font-weight: 500;
+
+                &:nth-child(2){
+                    font-weight: 500;
+                    font-size: 42px;
+                    color: $textcolor-2;
+                }
+            }
+        }
+    }
+}
+.laptop-widget{
+    z-index: 5;
+    margin-top: -250px;
+}

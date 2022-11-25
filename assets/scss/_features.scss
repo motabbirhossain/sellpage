@@ -1,0 +1,48 @@
+.future-wrepper{
+    padding: 106px 0px;
+    @media (max-width:768px) {
+        padding: 50px 0px;
+        margin-bottom: 50px;
+    }
+    .future-item{
+        @media (max-width:768px) {
+            padding: 25px 0px;
+        }
+        z-index: 1;
+        position: relative;
+        .icon{
+            margin-bottom: 30px;
+        }
+        .content{
+            h4{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                font-family: $body-font;
+                color: $white;
+                margin-bottom: 15px;
+            }
+            p{
+                max-width: 315px;
+                height: auto;
+                margin: 0 auto;
+                font-weight: 450;
+                font-size: 15px;
+                line-height: 26px;
+                font-family: $body-font;
+                color: $white;
+
+            }
+        }
+        .vector{
+            position: absolute;
+            top: -4%;
+            left: 40%;
+            z-index: -1;
+            @media (max-width:768px) {
+                top: 8%;
+            }
+        }
+    }
+}
+
